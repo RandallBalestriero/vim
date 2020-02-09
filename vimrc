@@ -63,6 +63,9 @@ endfunction
 autocmd! User GoyoEnter call <SID>goyo_enter()
 autocmd! User GoyoLeave call <SID>goyo_leave()
 
+autocmd BufNewFile *.sh 0r ~/.vim/templates/skeleton.sh
+autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py
+
 
 autocmd VimEnter * Goyo
 
