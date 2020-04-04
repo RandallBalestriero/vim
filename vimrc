@@ -22,7 +22,7 @@ set cursorline
 
 
 let g:jedi#popup_on_dot    = 1
-let g:jedi#show_call_signatures = "1"
+let g:jedi#show_call_signatures = "0"
 " This depends on the completeopt option. Jedi initializes it in its ftplugin. Add the following line to your .vimrc to disable it:
 autocmd FileType python setlocal completeopt-=preview
 
@@ -41,6 +41,7 @@ endif
 syntax on
 filetype plugin indent on
 
+let &colorcolumn=join(range(81,999),",")
 
 function! s:goyo_enter()
   let b:quitting = 0
@@ -67,5 +68,5 @@ autocmd BufNewFile *.sh 0r ~/.vim/templates/skeleton.sh
 autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py
 
 
-autocmd VimEnter * Goyo
+" autocmd VimEnter * Goyo
 

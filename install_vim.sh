@@ -17,4 +17,4 @@ git clone https://github.com/tell-k/vim-autopep8.git
 git clone https://github.com/tpope/vim-commentary.git
 git clone https://github.com/junegunn/goyo.vim.git
 git clone https://github.com/ervandew/supertab.git
-
+git clone https://github.com/fpicalausa/Color-Column.git
